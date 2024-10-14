@@ -1,0 +1,106 @@
+body {
+    background-color: #333; /* Dark outside grid-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .grid-container {
+    background-color: #555; /* Less dark inside grid-container */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .logo {
+    position: relative;
+    margin-bottom: 20px; /* Add margin at the bottom of the logo */
+    transform: translateX(37%);
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px; /* Adjust the padding to reduce the gap */
+  }
+  
+  .title {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0;
+    font-style: italic;
+  }
+  
+  .cool-form, .delete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cool-form label, .delete-form label {
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .cool-form input[type="text"],
+  .cool-form input[type="number"],
+  .delete-form input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .cool-form button, .delete-form button {
+    padding: 10px 20px;
+    background-color: #ff6b6b; /* Cool button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .cool-form button:hover, .delete-form button:hover {
+    background-color: #ff4444; /* Slightly darker on hover */
+  }
+  
+  /* Styling for delete section */
+  .delete-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete-form label {
+    color: white;
+    margin: 0 9px 10px 0;
+  }
+  
+  .delete-form button {
+    padding: 10px 20px;
+    background-color: #ff6b6b; /* Cool button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .delete-form button:hover {
+    background-color: #ff4444; /* Slightly darker on hover */
+  }
+  
+  /* Add some spacing between the two sections */
+  .cool-form + .delete-form {
+    margin-top: 20px;
+  }
+  

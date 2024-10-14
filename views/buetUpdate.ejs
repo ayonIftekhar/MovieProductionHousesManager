@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/buetUpdate.css">
+  <title>BUET Update</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="logo">
+      <img src="/buet.png" alt="University Logo">
+    </div>
+    <h1 class="title">Bangladesh University of Engineering Technology</h1>
+    <form class="cool-form" action="/buet/update" method="post">
+      <label for="dept-id">Enter Dept. ID:</label>
+      <input type="text" name="dept_id" id="dept-id">
+      <label for="no-of-seats">Enter No. Of Seats:</label>
+      <input type="number" name="no_of_seats" id="no-of-seats">
+      <button type="submit" name="action" value="update">Update</button>
+    </form>
+    
+    <form class="delete-form" action="/buet/update" method="post">
+      <label for="delete-dept-id">Enter Dept. ID:</label>
+      <input type="text" name="delete_dept_id" id="delete-dept-id">
+      <button type="submit" name="action" value="delete">Delete</button>
+    </form>
+    
+  </div>
+</body>
+</html>

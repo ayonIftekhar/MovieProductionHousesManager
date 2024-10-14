@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh University Of Engineering and Technology</title>
+  <link rel="stylesheet" href="buet.css"> <!-- Include the external CSS file -->
+</head>
+<body>
+  <div class="grid-container">
+    
+    <div class="logo">
+      <img src="buet.png" alt="University Logo">
+    </div>
+    <div class="title">Bangladesh University Of Engineering and Technology</div>
+    <div class="links">
+      <a href="/buet/departments">Departments</a>
+      <a href="http://localhost:3000/buet/prereq">Prerequisites</a>
+      <a href="/buet/update">Update Info</a>
+    </div>
+    <button class="log-out-button" onclick="logout()">Log Out</button>
+    <div class="visit">
+      <a href="https://www.buet.ac.bd/">Visit Us On Official Website...</a>
+    </div>
+    
+
+  </div>
+
+  <script>
+    function logout() {
+      fetch('/logout', {
+        method: 'POST'
+      })
+      .then(response => {
+        
+        // Redirect to the login page or any other page after logout
+        window.location.href = '/';
+      })
+      .catch(error => {
+        console.error('Logout error:', error);
+      });
+    }
+  </script>
+</body>
+</html>
